@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ocean Tides Fest 2026 | Metalcore Фествиал Варна</title>
+        <meta name="description" content="Ocean Tides Fest 2026 е голям metalcore фестивал във Варна с международни и ъндърграунд банди.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="buyTicket.css">
+    </head>
+    <body>
+        
+         <nav> 
+                <div id ="left"> 
+                <img id ="logo" src="OceanTides_NavLogo.png" alt="" onclick="goToPage('Main.html')">
+                </div>
+                <div id="right">
+                    <button class="navButton" onclick="goToPage('Main.html')">Начало</button>
+                    <button class="navButton" onclick="goToPage('stage.html')">Сцена</button>
+                    <button class="navButton" onclick="goToPage('gallery.html')">Галерия</button>
+                    <button class="navButton" onclick="goToPage('aboutUs.html')">За нас</button>
+                    <button class="navButton" onclick="goToPage('contacts.html')">Контакти</button>
+                </div>
+            </nav>
+
+           
+                <main>
+    <h1>Закупи билет за Ocean Tides Fest</h1>
+
+    <form >
+
+        <label>Избери тип билет:</label>
+        <select id="ticketType" required>
+            <option value="" disabled selected>--Избери--</option>
+            <option value="standard" data-price="50">Стандартен - 50 лв</option>
+            <option value="vip" data-price="120">VIP - 120 лв</option>
+            <option value="backstage" data-price="200">Backstage - 200 лв</option>
+        </select>
+
+        <label>Продължителност:</label>
+        <select id="ticketDays" required>
+            <option value="1">1 ден</option>
+            <option value="3">3 дни (цена x2.5)</option>
+        </select>
+
+        <label>Количество:</label>
+        <input type="number" id="ticketQuantity" value="1" min="1" required>
+
+        <h3>Обща цена: <span id="totalPrice">0</span> лв</h3>
+
+        <label>Име:</label>
+        <input type="text"  required>
+
+        <label>Имейл:</label>
+        <input type="email" required>
+
+    </form>
+        
+    <button type="submit" id="buyButton">Купи билет</button>
+</main>
+
+            <footer id="footerMain">
+
+                <div id="info">
+                    <h2>ОФИС</h2>
+                    <p>Адрес: България, бул. "Княза Борис I-ви", Варна</p>
+                    <a href="mailto:info@oceantidesfest.bg"">info@oceantidesfest.bg"</a>
+                    <p>+359 72 564 6275 </p>
+                </div>
+
+                <div id="links">
+                    <h2>ЛИНКОВЕ</h2>
+                    <a href="Main.html">Начало</a>
+                    <a href="aboutUs.html">За нас</a>
+                    <a href="contacts.html">Контакти</a>
+                    <a href="termsAndConditions.html">Условия на ползване</a>
+                </div>
+                
+            </footer>
+
+            <script src="Main.Js" async defer></script>
+            <script src="buyTicket.js" defer></script>
+        </body>
+</html>

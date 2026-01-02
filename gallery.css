@@ -1,0 +1,290 @@
+
+
+/*???*/@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+   
+    background-color: rgb(1, 97, 135);   /*experimental*/ 
+    /* background-color: rgb(4, 58, 79);*/
+    
+
+}
+
+nav
+{
+    background-color: rgb(0, 183, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    width: 100%;
+    align-items: center;   
+    border-bottom: 2px solid cyan;
+    box-shadow: 0 10px 25px rgba(0,255,255,0.3);
+
+}
+
+#right
+{
+    display: flex;
+    align-items: center;   
+    justify-content: space-evenly;
+    width: 1030px; 
+    
+}
+
+#right .navButton
+{
+    width: 180px;
+    height: 70px;
+    padding: 5px;
+    background-color: rgb(0, 255, 255);
+    font-size: 28px;
+     font-family: "Russo One", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    color:rgb(4, 58, 79);
+    letter-spacing: 3px;
+    border: solid 5px rgb(4, 58, 79);
+    border-radius: 35px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+#right .navButton:hover
+{
+
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,255,255,0.7);
+    border-color: cyan;
+
+}
+#left
+{   
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#left #logo 
+{
+    
+    width: 450px;
+    height: auto;
+    transition: all 0.2s ease-in;
+
+}
+#left #logo:hover
+{
+    transform: scale(1.1);
+    
+      filter: brightness(1.35) drop-shadow(0 0 35px rgb(255, 255, 255));
+
+            
+}
+
+main 
+{       margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        padding-bottom: 300px;
+
+}
+main h1
+{
+    color: rgb(0, 255, 255);;
+    font-size: 50px;
+     
+    font-family: "Russo One", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    cursor: default;
+    margin: 0;
+    
+    
+    
+    
+}
+
+main #firstRow 
+{
+    
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+main #firstRow img
+{
+  
+    height: 370px;
+    width: auto;
+    border: 3px solid rgba(0, 255, 255, 0.8); 
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.9),
+                0 0 20px rgba(0, 255, 255, 0.7),
+                0 0 40px rgba(0, 255, 255, 0.5);
+    
+    
+    
+}
+main #secondRow
+{
+    margin-top: 20px;
+   display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+main #secondRow img
+{
+    
+    height: 310px;
+    width: auto;
+
+    border: 3px solid rgba(0, 255, 255, 0.8); 
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.9),
+                0 0 20px rgba(0, 255, 255, 0.7),
+                0 0 40px rgba(0, 255, 255, 0.5);
+    
+    
+    
+}
+main div
+{
+    padding: 30px;
+    
+}
+main div h1
+{
+  margin-top: 60px;
+}
+
+
+
+
+#footerMain
+{   
+    height: 100%;
+    width: 100%;
+    background-color:rgb(4, 58, 79);
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top:20px;  
+    font-size: 20px;
+
+    border-top: 2px solid cyan;
+    box-shadow: 0 -10px 25px rgba(0,255,255,0.3);
+
+
+}
+
+#footerMain #links
+{
+   
+    display: flex;
+    flex-direction:column ;
+    gap:5px;
+    margin-left: 150px
+
+}
+
+#footerMain #links h2
+{
+    color:rgb(0, 183, 255);
+    display: inline-block;
+
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    
+   
+
+}
+#footerMain #links a
+{
+    
+    color:rgb(0, 183, 255);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-decoration: none;
+   
+
+}
+
+
+#footerMain #links a:hover
+{
+    color:rgb(122, 217, 255);
+}
+
+
+
+#footerMain #info
+{
+   
+    display: flex;
+    flex-direction:column ;
+   
+    margin-left: 150px;
+
+
+    color:rgb(0, 183, 255);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+   
+}
+#footerMain #info h2
+{
+    
+    
+    color:rgb(0, 183, 255);
+    display: inline-block;    
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+
+    margin-bottom: 5px;
+    
+}
+#footerMain #info a
+{
+
+    color:rgb(0, 183, 255);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+
+    text-decoration: none;
+}
+#footerMain #info a:hover
+{
+    color:rgb(122, 217, 255);
+}
